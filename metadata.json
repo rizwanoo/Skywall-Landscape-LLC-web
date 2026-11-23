@@ -1,0 +1,6 @@
+{
+  "name": "Skywall Landscape LLC",
+  "description": "Custom pavers, artificial turf, yard cleanups, and irrigation across Las Vegas, Nevada. Request a free landscaping estimate from Skywall Landscape LLC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
