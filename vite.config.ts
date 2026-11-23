@@ -9,6 +9,23 @@ export default defineConfig(() => {
     plugins: [
       react(),
       tailwindcss(),
+      {
+        name: 'inject-og-origin',
+        transformIndexHtml(html: string): string {
+          const vercelHost =
+            process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL;
+          const baseUrl =
+            process.env.APP_URL?.trim() || (vercelHost ? `https://${vercelHost}` : '');
+          if (!baseUrl) {
+            return html;
+          }
+          const cleanBase = baseUrl.replace(/\/+$/, '');
+          return html
+            .replaceAll('content="/og-image.jpg"', `content="${cleanBase}/og-image.jpg"`)
+            .replaceAll('"logo": "/logo.jpg"', `"logo": "${cleanBase}/logo.jpg"`)
+            .replaceAll('"image": "/og-image.jpg"', `"image": "${cleanBase}/og-image.jpg"`);
+        },
+      },
       // Copies src/assets into dist/ so root-relative URLs like
       // "/src/assets/images/..." (e.g. generate_image output) still resolve
       // in production builds. Do not remove.
