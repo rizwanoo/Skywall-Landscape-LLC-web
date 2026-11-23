@@ -11,7 +11,7 @@ import {
   PortfolioCategory,
   RoutePath,
   ServiceOption,
-} from '../data/siteData';
+} from '../lib/siteData';
 
 interface ProjectsPageProps {
   onNavigate: (path: RoutePath, hash?: string, prefillService?: ServiceOption) => void;

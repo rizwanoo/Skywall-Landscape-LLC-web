@@ -1,6 +1,6 @@
 import { ChevronDown, Menu, Phone, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { BUSINESS_INFO, RoutePath, SERVICES } from '../data/siteData';
+import { BUSINESS_INFO, RoutePath, SERVICES } from '../lib/siteData';
 
 interface NavbarProps {
   currentPath: RoutePath;

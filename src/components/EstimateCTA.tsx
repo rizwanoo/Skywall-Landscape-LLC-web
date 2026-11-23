@@ -1,6 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react';
 import { motion } from 'motion/react';
-import { BUSINESS_INFO } from '../data/siteData';
+import { BUSINESS_INFO } from '../lib/siteData';
 
 interface EstimateCTAProps {
   headline: string;

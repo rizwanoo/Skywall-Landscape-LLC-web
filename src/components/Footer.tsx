@@ -1,5 +1,5 @@
 import { ArrowUpRight, Instagram, MapPin, MessageSquare, Phone } from 'lucide-react';
-import { BUSINESS_INFO, RoutePath, SERVICES } from '../data/siteData';
+import { BUSINESS_INFO, RoutePath, SERVICES } from '../lib/siteData';
 
 interface FooterProps {
   onNavigate: (path: RoutePath, hash?: string) => void;

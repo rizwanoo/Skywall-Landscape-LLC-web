@@ -2,7 +2,7 @@ import { MotionConfig } from 'motion/react';
 import { useCallback, useEffect, useState } from 'react';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
-import { ROUTE_SEO, RoutePath, ServiceOption } from './data/siteData';
+import { ROUTE_SEO, RoutePath, ServiceOption } from './lib/siteData';
 import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';

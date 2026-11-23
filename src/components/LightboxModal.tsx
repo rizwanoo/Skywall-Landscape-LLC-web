@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useEffect } from 'react';
-import { PortfolioItem } from '../data/siteData';
+import { PortfolioItem } from '../lib/siteData';
 
 interface LightboxModalProps {
   items: PortfolioItem[];

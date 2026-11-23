@@ -2,7 +2,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 import { EstimateCTA } from '../components/EstimateCTA';
 import { SafeImage } from '../components/SafeImage';
-import { PROCESS_STEPS, RoutePath, SERVICES, ServiceOption } from '../data/siteData';
+import { PROCESS_STEPS, RoutePath, SERVICES, ServiceOption } from '../lib/siteData';
 
 interface ServicesPageProps {
   onNavigate: (path: RoutePath, hash?: string, prefillService?: ServiceOption) => void;

@@ -11,7 +11,7 @@ import {
   SERVICES,
   ServiceOption,
   WHY_CHOOSE_ITEMS,
-} from '../data/siteData';
+} from '../lib/siteData';
 
 interface HomePageProps {
   onNavigate: (path: RoutePath, hash?: string, prefillService?: ServiceOption) => void;

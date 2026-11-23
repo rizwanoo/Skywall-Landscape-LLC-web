@@ -10,7 +10,7 @@ import {
   X,
 } from 'lucide-react';
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
-import { BUSINESS_INFO, ServiceOption } from '../data/siteData';
+import { BUSINESS_INFO, ServiceOption } from '../lib/siteData';
 
 interface ContactPageProps {
   prefillService?: ServiceOption;
